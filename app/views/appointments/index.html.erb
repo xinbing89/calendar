@@ -3,11 +3,11 @@
 <table>
   <thead>
     <tr>
-      <th>Year</th>
-      <th>Month</th>
-      <th>Day</th>
-      <th>Time</th>
-      <th>Description</th>
+      <th width="60">Year</th>
+      <th width="60">Month</th>
+      <th width="60">Day</th>
+      <th width="60">Time</th>
+      <th width="100">Description</th>
       <th></th>
       <th></th>
       <th></th>
@@ -17,14 +17,14 @@
   <tbody>
     <% @appointments.each do |appointment| %>
       <tr>
-        <td><%= appointment.year %></td>
-        <td><%= appointment.month %></td>
-        <td><%= appointment.day %></td>
-        <td><%= appointment.time %></td>
-        <td><%= appointment.description %></td>
-        <td><%= link_to 'Show', appointment %></td>
-        <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
-        <td><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td align="center"><%= appointment.year %></td>
+        <td align="center"><%= appointment.month %></td>
+        <td align="center"><%= appointment.day %></td>
+        <td align="center"><%= appointment.time %></td>
+        <td align="center"><%= appointment.description %></td>
+        <td align="center"><%= link_to 'Show', appointment %></td>
+        <td align="center"><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
+        <td align="center"><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
