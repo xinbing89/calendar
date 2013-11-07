@@ -10,3 +10,7 @@ project_2:
 project_3:
   url: "/pages/calendar"
   description: "A basic interactive calendar (non-persistent)"
+project_4:
+  url: "/pages/calendar"
+  description: "A basic interactive calendar (with back end)"
+
