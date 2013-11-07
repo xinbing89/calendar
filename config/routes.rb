@@ -1,8 +1,11 @@
 Calendar::Application.routes.draw do
+  resources :appointments
+
 root to: 'pages#home'
 
 get 'pages/project_2', to: 'pages#project_2'
 get 'pages/calendar', to: 'pages#calendar'
+get '/appointments' => 'appointments#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
